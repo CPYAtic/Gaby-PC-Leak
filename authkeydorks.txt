@@ -1,0 +1,13 @@
+pastebin:
+bot.run
+client.run
+const Token
+discord.js token
+token
+discord.js
+bot = Discordrb::Bot.new token:
+client:run
+discordia client:run
+discord, err := discordgo
+discord client.connect({ token:
+discord client.Connect("

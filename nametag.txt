@@ -1,0 +1,58 @@
+Addresses accessing team bit:
+
+00548169 - 8B 42 08  - mov eax,[edx+08]
+00A8D498 - 8B 51 08  - mov edx,[ecx+08]
+0070A6F2 - 8B 48 08  - mov ecx,[eax+08]
+005AEF00 - 8B 51 08  - mov edx,[ecx+08] <- something fishy here
+
+|
+v
+
+call 005AED90 - DrawNametag
+
+int __stdcall sub_5AED90(int, int, int, char *Src, char, char, int, int);
+
+ASM scan result (call 005AED90):
+
+009322EB
+009323A2
+0093273D
+00932834
+00932A27
+00932AD9
+
+----------------------------------------------------------------------------------
+
+00930FEB - call 00931EC0 (ghost mode)
+
+ghost mode (all players): 00931EC0 -> 009323A2 - call DrawNametag
+normal match (entity): 0093249A -> 0093273D - call DrawNametag
+normal match (player): 0093249A -> 00932AD9 - call DrawNametag
+
+----------------------------------------------------------------------------------
+
+009326EA - test eax,eax // is crosshair on top of enemy?
+009326EC - jne 00932742
+
+00932737 - push eax
+00932738 - mov ecx,MicroVolts.exe+DB9CE8 { [010033EC] }
+0093273D - call MicroVolts.exe+1AED90 // Draw nametag
+
+00932742 // skip draw function here
+
+----------------------------------------------------------------------------------
+
+Interesting stuff - nop these
+
+00932747 - call 008E4B50
+009327AB - call 00E0A170
+00932757 - call 00522F00
+00932782 - call 008EAA30
+
+// red shit on top of teammate
+00932ADE - push 00 // change to 01
+
+009327B3 - je 00932843 // checks if visible
+
+
+009321AA  JE -> JNE = nametags

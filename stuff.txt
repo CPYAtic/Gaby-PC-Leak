@@ -1,0 +1,121 @@
+  GUI.Label(new Rect(5f, 20f, 95f, 30f), "Player");         
+
+    if (GUI.Button(new Rect(100f, 20f, 40f, 30f), "ON"))
+    {
+        this.playerEsp = true;
+    }
+    if (GUI.Button(new Rect(140f, 20f, 40f, 30f), "OFF"))                    windowRect2 = new Rect(20f, 20f, 180f, 200f);
+    {
+        this.playerEsp = false;
+    }
+    GUI.Label(new Rect(5f, 50f, 95f, 30f), "Zombie");
+    if (GUI.Button(new Rect(100f, 50f, 40f, 30f), "ON"))
+    {
+        this.zombieEsp = true;
+    }
+    if (GUI.Button(new Rect(140f, 50f, 40f, 30f), "OFF"))
+    {
+        this.zombieEsp = false;
+    }
+    GUI.Label(new Rect(5f, 80f, 95f, 30f), "Item");
+    if (GUI.Button(new Rect(100f, 80f, 40f, 30f), "ON"))
+    {
+        this.itemEsp = true;
+    }
+    if (GUI.Button(new Rect(140f, 80f, 40f, 30f), "OFF"))
+    {
+        this.itemEsp = false;
+    }
+    GUI.Label(new Rect(5f, 110f, 95f, 30f), "Crate");
+    if (GUI.Button(new Rect(100f, 110f, 40f, 30f), "ON"))
+    {
+        this.crateEsp = true;
+    }
+    if (GUI.Button(new Rect(140f, 110f, 40f, 30f), "OFF"))
+    {
+        this.crateEsp = false;
+    }
+    GUI.Label(new Rect(5f, 140f, 95f, 30f), "Vehicle");
+    if (GUI.Button(new Rect(100f, 140f, 40f, 30f), "ON"))
+    {
+        this.vehicleEsp = true;
+    }
+    if (GUI.Button(new Rect(140f, 140f, 40f, 30f), "OFF"))
+    {
+        this.vehicleEsp = false;
+    }
+    GUI.Label(new Rect(5f, 170f, 95f, 30f), "Animal");
+    if (GUI.Button(new Rect(100f, 170f, 40f, 30f), "ON"))
+    {
+        this.animalEsp = true;
+    }
+    if (GUI.Button(new Rect(140f, 170f, 40f, 30f), "OFF"))
+    {
+        this.animalEsp = false;
+    }
+    GUI.DragWindow(new Rect(0f, 0f, 10000f, 20f));
+}
+
+
+
+
+
+
+
+
+
+
+ListBox lB = new ListBox(new Rect(10, 20, 200, 200), new Rect(0, 0, 200, 200), false, true);
+
+            textField = GUI.TextField(new Rect(10,10, 200, baseRect.height), textField);
+            foreach (String s in InvBlueprints.Instance.AllBlueprintNames)
+            {
+                lB.AddItem(s);
+            }
+
+            if (lB.ReDraw())
+            {
+                int id = lB.GetSelectedID() - 1;
+                int qt;
+                string s = "";
+                if (int.TryParse(textField, out qt))
+                {
+                    for (int i = 0; i < InvBlueprints.Instance.AllBlueprintNames.Count; i++)
+                    {
+                        if (i == id)
+                        {
+                            s = InvBlueprints.Instance.AllBlueprintNames[i];
+                        }
+                    }
+                }
+                CodeHatch.Inventory.Blueprints.InvItemBlueprint blueprint =
+                    InvDefinitions.Instance.Blueprints.GetBlueprintForName(s, true, true);
+                InvGameItemStack stack = new InvGameItemStack(blueprint, qt, null);
+                CodeHatch.ItemContainer.ItemContainerExtensions.GetContainerOfType(
+                    CodeHatch.Engine.Core.Cache.Entity.LocalPlayer.Controller.CurrentCharacter.Entity,
+                    CodeHatch.ItemContainer.CollectionTypes.Inventory).Contents.AddItem(stack, true);
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

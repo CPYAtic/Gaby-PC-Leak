@@ -1,0 +1,20 @@
+#include <Windows.h>
+#include <stdint.h>
+#include <winternl.h>
+#include <Psapi.h>
+#include <stdio.h>
+#include <process.h>
+#include <conio.h>
+#include <debugapi.h>
+#include <float.h>
+#include <iostream>
+#include <string>
+#include <fstream>
+#include <sstream>
+#include <ctime>
+#include <limits>
+#include <math.h>
+#include <vector>
+#include <cctype>
+#include <clocale>
+

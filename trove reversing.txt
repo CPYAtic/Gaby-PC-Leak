@@ -1,0 +1,11 @@
+1129447424 to 1163001856 -> No FOG
+
+Base : "trove.exe"+DF3500 = 01003500
+Offset: 28
+
+
+old No Fog base = "trove.exe"+0098209C
+old Speed base = "trove.exe"+00982098
+DF34FC
+
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Stellar.Ninja  Shop</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap-4.1.2/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="styles/category.css">
+<!-- Selly embed link -->
+<script type="text/javascript" src="https://rocketr.net/assets/RocketrEmbedCustom.js"></script>
+<style type="text/css">
+	A:link { COLOR: #4a4a4a; TEXT-DECORATION: none }
+	A:visited { COLOR: #4a4a4a; TEXT-DECORATION: none }
+	A:active { COLOR: #4a4a4a; TEXT-DECORATION: none }
+	A:hover { COLOR: #2FCE98; TEXT-DECORATION: none }
+	
+</style>
+</head>
+<body>
+
+<div class="super_container">
+	<!-- Header -->
+	<header class="header">
+		<div class="header_overlay"></div>
+		<div class="header_content d-flex flex-row align-items-center justify-content-start" style="background-color: black; height: 60px;">
+			<div class="logo">
+				<a href="#">
+					<div class="d-flex flex-row align-items-center justify-content-start">
+						<div><img src="images/logo_1.png" alt=""></div>
+						<div>Stellar.Ninja's Shop</div>
+					</div>
+				</a>	
+			</div>
+			<div class="header_right d-flex flex-row align-items-center justify-content-start ml-auto">
+				<!-- User -->
+				
+				<div class="header_phone d-flex flex-row align-items-center justify-content-start">
+					<div><a href="https://stellar.ninja/">Home</a></div>
+				</div>
+				<div class="header_phone d-flex flex-row align-items-center justify-content-start">
+					<div><a href="https://stellar.ninja/discord">Discord</a></div>
+				</div>
+				<div class="header_phone d-flex flex-row align-items-center justify-content-start">
+					<div><a href="https://stellar.ninja/forums">Forum</a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="super_container_inner">
+		<div class="super_overlay"></div>
+		<div class="home" style="height: 0px; background-color: white;"></div>
+
+		<!-- Products -->
+		<div class="products"><br><br><br>
+			<div class="container">
+				<div class="row products_row products_container grid">
+					
+					<!-- Product 1 -->
+					<div class="col-xl-4 col-md-6 grid-item new">
+						<div class="product">
+							<div class="product_image"><img src="https://bazhar.site/StellarSpoof.png" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="spoofer.html">Stellar Spoofer | 1 Day | [FORTNITE, APEX, PUBG, R6S]</a></div>
+											<!-- <div class="product_category">In <a href="#">Fortnite Cheats</a></div> -->
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<!-- <div class="rating_r rating_r_5 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div> -->
+										<div class="product_price text-right">$7<span>.00</span></div>
+									</div>
+								</div>
+								<div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+									    <script type="text/javascript" src="https://rocketr.net/assets/RocketrEmbedCustom.js"></script>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center" style="width: 100%;" data-rocketr-product="d7c96f1764a2">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product 2 -->
+					<div class="col-xl-4 col-md-6 grid-item hot">
+						<div class="product">
+							<div class="product_image"><img src="https://bazhar.site/StellarSpoof.png" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="spoofer.html">Stellar Spoofer | 1 Week | [FORTNITE, APEX, PUBG, R6S]</a></div>
+											<!-- <div class="product_category">In <a href="#">Fortnite Cheats</a></div> -->
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<!-- <div class="rating_r rating_r_5 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div> -->
+										<div class="product_price text-right">$12<span>.00</span></div>
+									</div>
+								</div>
+								<div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+									    <script type="text/javascript" src="https://rocketr.net/assets/RocketrEmbedCustom.js"></script>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center" style="width: 100%;" data-rocketr-product="b1fc866db313">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Product 3 -->
+					<div class="col-xl-4 col-md-6 grid-item sale">
+						<div class="product">
+							<div class="product_image"><img src="https://bazhar.site/StellarSpoof.png" alt=""></div>
+							<div class="product_content">
+								<div class="product_info d-flex flex-row align-items-start justify-content-start">
+									<div>
+										<div>
+											<div class="product_name"><a href="spoofer.html">Stellar Spoofer | Life | [FORTNITE, APEX, PUBG, R6S]</a></div>
+											<!-- <div class="product_category">In <a href="#">Fortnite Cheats</a></div> -->
+										</div>
+									</div>
+									<div class="ml-auto text-right">
+										<!-- <div class="rating_r rating_r_5 home_item_rating"><i></i><i></i><i></i><i></i><i></i></div> -->
+										<div class="product_price text-right">$35<span>.00</span></div>
+									</div>
+								</div>
+								<div class="product_buttons">
+									<div class="text-right d-flex flex-row align-items-start justify-content-start">
+									    <script type="text/javascript" src="https://rocketr.net/assets/RocketrEmbedCustom.js"></script>
+										<div class="product_button product_cart text-center d-flex flex-column align-items-center justify-content-center" style="width: 100%;" data-rocketr-product="f206e8c62944">
+											<div><div><img src="images/cart.svg" class="svg" alt=""><div>+</div></div></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

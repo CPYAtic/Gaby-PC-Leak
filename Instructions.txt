@@ -1,0 +1,38 @@
+------------Steps To Crack And Register CHARLES--------------------------------
+
+1- Install Charles 
+2- After the installation is complete , copy the "charles.jar" to 
+		c:\Program Files(x86)\Charles\lib
+	or
+		Directory_You_Installed_In\Charles\lib
+3- Open Charles and go to 
+		Help--> Register Charles
+	
+	Add the following 
+		Registered name: 
+			anthony ortolani
+
+		License key: 
+			a4036b2761c9583fda
+4- Restart Your Charles			
+
+
+---------------Important Step That must be done before using charles---------------
+
+1- If you have the charles open , close it and restart it 
+2- Go to 
+	Help--> SSL Proxying--> Install Charles Root Certificate
+3- Click "Install Certificate"
+4- Do the following 
+	Select "Current User" , Click Next 
+	Select "Place all Certificates in the following store" , 
+	Hit "Browse"
+	Select "Trusted Root Certification Authorities" and Hit Okay 
+	Click Next
+	Then Click "Finish" and Finally Hit "OK" 
+	
+------------------------------------------------------------------------------------
+Follow My website for more hacks - http://www.cyberterminators.co
+If you need any help , feel free to ask questions here - https://www.facebook.com/groups/c.terminators
+
+~By The Team Of CyberTerminators 2016
